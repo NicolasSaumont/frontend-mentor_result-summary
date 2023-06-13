@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5em auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+h1 {
+  color: hsl(221, 100%, 96%);
+  font-size: 4rem;
+  margin-bottom: 0.2em;
+}
+
+.result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  text-align: center;
+  padding: 1.5em 2.5em;
+}
+
+.result p {
+  color: hsl(241, 100%, 89%);
+}
+
+.appreciation {
+  color: hsl(221, 100%, 96%);
+  font-size: 1.5rem;
+  margin-bottom: 0.8em;
+}
+
+.summary {
+  margin: 1.5em auto;
+  width: 80%;
+}
+
+.summary h2 {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.tag-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0.7em 0;
+  border-radius: 0.5em;
+}
+
+.tag-item.reaction {
+  background-color: hsla(0, 100%, 67%, 20%);
+}
+
+.tag-name {
+  display: flex;
+}
+
+.tag-item.reaction .tag-name p {
+  color: hsl(0, 100%, 67%);
+  margin-left: 0.7em;
+}
+
+.tag-item.memory {
+  background-color: hsla(39, 100%, 56%, 20%);
+}
+
+.tag-item.memory .tag-name p {
+  color: hsl(39, 100%, 56%);
+  margin-left: 0.7em;
+}
+
+.tag-item.verbal {
+  background-color: hsla(166, 100%, 37%, 20%);
+}
+
+.tag-item.verbal .tag-name p {
+  color: hsl(166, 100%, 37%);
+  margin-left: 0.7em;
+}
+
+.tag-item.visual {
+  background-color: hsla(234, 85%, 45%, 20%);
+}
+
+.tag-item.visual .tag-name p {
+  color: hsl(234, 85%, 45%);
+  margin-left: 0.7em;
+}
+
+.tag-score p {
+  color: #888;
+  font-weight: bold;
+}
+
+.tag-score p strong {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+
+.btn-continue {
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  font-size: 1.2rem;
+  color: hsl(221, 100%, 96%);
+  border: none;
+  border-radius: 50px;
+  padding: 1em;
+}
+
+.btn-continue:hover {
+  background-color: hsl(224, 30%, 37%);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    flex-direction: row;
+    max-width: 720px;
+    margin: 0 auto;
+    align-items: center;
+    height: 95vh;
+  }
+
+  .result {
+    border-radius: 2em;
+  }
+
+  .summary {
+    border-radius: 2em;
+    margin: 0 2em;
+    padding: 1em;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 10%);
+  }
+
+  .footer {
+    height: 95vh;
+  }
+}
