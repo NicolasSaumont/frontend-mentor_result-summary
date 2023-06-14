@@ -127,12 +127,12 @@ h1 {
 }
 
 .btn-continue:hover {
-  background-color: hsl(224, 30%, 37%);
+  background: linear-gradient(#6542fe, #342ce2);
   letter-spacing: 0.05em;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 800px) {
   main {
     flex-direction: row;
     max-width: 720px;
